@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circulaires Sanitaires</title>
+<style>
+    /* إعدادات عامة */
+    @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Amiri', serif;
+        line-height: 1.8;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom right, #f4f4f9, #e0e7ff);
+        color: #333;
+        overflow-x: hidden;
+    }
+
+    /* رأس الصفحة */
+    header {
+        width: 100%;
+        background: linear-gradient(135deg, #4a90e2, #0056b3);
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: relative;
+        top: 0;
+        z-index: 1000;
+        transition: background-color 0.3s ease-in-out;
+        border-radius: 10px;
+    }
+
+    header:hover {
+        background: linear-gradient(135deg, #0056b3, #4a90e2);
+    }
+
+    header h2 {
+        margin: 15px 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    header h2 span {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: normal;
+        color: #d1e9ff;
+        margin-top: 5px;
+    }
+
+    header h2:hover {
+        color: #ffdd44;
+        transform: translateY(-5px);
+    }
+
+    header h2:first-child {
+        margin-top: 0;
+    }
+
+    header h2:last-child {
+        margin-bottom: 0;
+    }
+
+    /* الحاوية */
+    .container {
+        padding: 15px;
+        max-width: 100%;
+        margin: auto;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    /* الأقسام */
+    .section {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .section:hover {
+        transform: scale(1.02);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    }
+	.section h2 {
+        color: blue;
+        transition: color 0.3s ease;
+    }
+	
+    /* مؤثرات النصوص */
+    .section p {
+        line-height: 1.8;
+        text-align: justify;
+        color: #444;
+        transition: color 0.3s ease;
+    }
+
+    .section p:hover {
+        color: #007BFF;
+    }
+
+    /* مؤثرات متحركة */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* إعدادات للأجهزة الصغيرة */
+    @media (max-width: 768px) {
+        body {
+            font-size: 16px;
+        }
+
+        header {
+            padding: 30px 15px;
+        }
+
+        header h2 {
+            font-size: 1.2rem;
+        }
+
+        header h2 span {
+            font-size: 1rem;
+        }
+
+        .container {
+            padding: 10px;
+        }
+
+        .section {
+            padding: 10px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        body {
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 20px 10px;
+        }
+
+        header h2 {
+            font-size: 1rem;
+        }
+
+        header h2 span {
+            font-size: 0.9rem;
+        }
+
+        .section {
+            padding: 8px;
+        }
+    }
+</style>
+
+
+
+</head>
+<body>
+
+<header>
+    <h2>Insitut national de formation supérieure paramédical</h2>
+	<h2>Classe : 1 ere annés ISP groupe 01</h2>
+	<h2>Module : Législation / Ethique Prof / Déontologie</h2>
+	<h2>Le thème : Le Role des Circulaire Sanitaires dans l'Amélioration de la qualité
+	des Soins et l'Organisation des Politiques de Santé</h2>
+	<h2>Encadrer par : M:Dait</h2>
+	<h2>Présenté par :</h2>
+	<h2>Rahmani Abderrahmene</h2>
+	<h2>Benaroume yaser</h2>
+	<h2>Benazouz mohamed</h2>
+	<h2>Zerari sidali</h2>
+</header>
+
+<div class="container">
+    <div class="section">
+        <h2>Définition des circulaires sanitaires :</h2>
+        <p>Les circulaires sanitaires sont des documents administratifs émis par les ministères ou les autorités de santé pour transmettre des instructions, des recommandations ou des lignes directrices aux professionnels de santé, aux établissements de soins et aux organismes de santé publique. Elles visent à clarifier ou à interpréter des textes législatifs ou réglementaires.</p>
+    </div>
+
+    <div class="section">
+        <h2>Rôle dans l’amélioration de la qualité des soins :</h2>
+        <ul>
+            <li><strong>Uniformisation des pratiques médicales :</strong> Les circulaires permettent de diffuser des protocoles standardisés pour des diagnostics, des traitements ou la gestion des pathologies. Elles réduisent les disparités entre les régions et les établissements de santé.</li>
+            <li><strong>Mise à jour des connaissances médicales :</strong> Elles communiquent les dernières avancées scientifiques ou recommandations des institutions (comme l’OMS ou des comités scientifiques).</li>
+            <li><strong>Réponse aux crises sanitaires :</strong> Lors d’épidémies ou d’urgences, les circulaires établissent des mesures à mettre en œuvre rapidement (ex. : Covid-19, grippe saisonnière).</li>
+            <li><strong>Suivi et évaluation :</strong> Elles définissent des indicateurs de performance pour évaluer la qualité des soins et les progrès réalisés.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Contribution à l'organisation des politiques de santé :</h2>
+        <ul>
+            <li><strong>Alignement avec les objectifs stratégiques :</strong> Les circulaires traduisent les politiques nationales en actions concrètes sur le terrain.</li>
+            <li><strong>Renforcement de la coordination :</strong> Elles favorisent la collaboration entre différents acteurs : agences régionales de santé (ARS), hôpitaux, médecins libéraux, etc.</li>
+            <li><strong>Adaptation locale des politiques :</strong> Elles permettent d'adapter les politiques nationales aux besoins spécifiques des territoires.</li>
+            <li><strong>Gestion des priorités de santé publique :</strong> En orientant les efforts vers des enjeux prioritaires (vaccination, prévention, lutte contre les inégalités d'accès aux soins).</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Limites et perspectives :</h2>
+        <p>Complexité et surcharge d’information : La multiplication des circulaires peut parfois conduire à une confusion ou à une charge administrative accrue pour les professionnels de santé.</p>
+        <p>Inégalités d’application : Certaines régions ou structures peuvent avoir plus de difficultés à appliquer les recommandations faute de moyens.</p>
+        <p>Digitalisation : La diffusion numérique pourrait améliorer l'accès et l’application des circulaires.</p>
+        <p>En somme, les circulaires sanitaires, lorsqu’elles sont bien conçues et mises en œuvre, jouent un rôle clé dans l’amélioration continue des soins et l’exécution des politiques de santé. Leur impact dépend cependant de leur clarté, de leur pertinence et de la capacité des parties prenantes à les appliquer.</p>
+    </div>
+</div>
+
+</body>
+</html>
